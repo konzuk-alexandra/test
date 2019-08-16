@@ -1,0 +1,334 @@
+/* Color Theme Swatches in Hex
+.flash-in-the-night-1-hex { color: #207373; }
+.flash-in-the-night-2-hex { color: #F2F2F2; }
+.flash-in-the-night-3-hex { color: #8C635A; }
+.flash-in-the-night-4-hex { color: #BF9288; }
+.flash-in-the-night-5-hex { color: #0D0D0D; } */
+
+/*general and mobile*/
+body {
+    position: relative;
+    width: 100%;
+    min-width: 25rem;
+    height: 100%;
+    background: #fff;
+}
+
+.wrapper { 
+   width: 100%;
+   min-width: 25rem;
+   height: 100vh;    
+}
+
+.masthead {
+ position: absolute;
+ font-family: 'Libre Caslon Display', serif;
+ line-height: 1.6rem;
+ margin-top: -450px;
+ height: 425px;
+ width: 100%;
+ text-align: center;
+}
+
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 700px;
+  z-index: 0;
+  object-position: center;
+  object-fit: cover;
+}
+
+.tagline {
+  position: relative;
+  background-color: #f2f2f2;
+  line-height: 7rem;
+  z-index: 1;
+  font-size: 60pt;
+  text-align: center;
+  color: #207373;
+  display: inline-block;
+  width: 90%;
+  margin-left: -1%;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  opacity: 0.95;
+}
+
+em  { 
+    color: #8C635A; 
+    font-size: 30pt; 
+    
+}
+.nav {
+    position: absolute;
+    width: 100%;
+    margin-top: -165px;
+    border-style: solid;
+    border-left-style: none;
+    border-right-style: none;
+    border-width: 3px;
+    border-color: #207373;
+    opacity: 0.9;
+}
+
+nav {
+    padding-top: 25px;
+    padding-bottom: 20px; 
+    width: 100%; 
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+button {
+    width: 90%;
+    line-height: 1.4rem; 
+    background-color:#8C635A;
+    font-family: 'Noto-sans', sans-serif;
+    font-size: 0.75rem; 
+    color: white;
+    padding: 8px;
+    text-align: center; 
+    margin-bottom: 8px;
+    border-style: none; 
+}
+
+button:hover { 
+    background-color:#207373; 
+}
+
+.footer {
+    height: 100px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    line-height: 1.6rem;
+}
+
+.footer a {
+    font-size: 20pt; 
+    color: #207373;
+}
+
+#facebook {
+    padding-right: 5%;
+}
+
+#instagram {
+    padding-right: 5%;
+}
+
+.footer a:hover {
+    color: #BF9288;
+}
+
+.container {
+    z-index: 1;
+    margin-top: 450px;
+    width: 100%; 
+    background-color: #f2f2f2;
+    background-image: url(../img/marble-bg.jpg);
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-repeat: repeat;
+    margin-bottom: 40px;
+    line-height: 1.4rem;
+}
+
+#title {
+    font-family:'Libre Caslon Display', serif;
+    font-weight: 300;
+    color: #8C635A;
+    font-size: 20pt;
+    line-height: 1.6rem;
+    text-align: center;
+}
+
+img {
+    width: 90%;
+    border-bottom-left-radius: 75px;
+    border-top-right-radius: 75px;
+    margin-bottom: 3%;
+    margin-left: 5%;
+    text-align: center;
+}
+
+.article p {
+    font-family: 'Noto-sans', sans-serif;
+    width: 90%;
+    padding: 1%;
+    margin-left: 2.5%;
+    text-align: left;
+    font-size: 0.75rem;
+}
+
+.article h3 { 
+    font-family: 'Noto-sans', sans-serif;
+    font-size: 1rem;
+    text-align: left;
+    margin-left: 2.5%;
+    color: #207373;
+}
+
+.article em {
+    font-size: 0.75rem;
+    color: #BF9288;
+    text-align: center;
+    margin-left: 5%;
+}
+
+hr {
+    width: 90%;
+    color: #207373;
+}
+.photography {
+    width: 100%;
+}
+
+#card {
+    width: 90%;
+}
+
+#card-alt {
+    width: 90%;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px; 
+    border-top-right-radius: 0px;
+}
+
+figcaption {
+     text-align: center;
+     margin-bottom: 5%;
+     color: #BF9288;
+     font-family: 'Noto-sans', sans-serif;
+    font-size: 0.75rem;
+}
+
+/* responsiveness */
+
+@media only screen and (min-width: 35rem) and (max-width: 80rem) {
+    
+    .nav {
+    margin-top: -450px;
+    border-top-style: none;
+    }
+
+    button {
+    width: 40%;
+    margin-left: 2%; 
+    margin-right: 2%; 
+    }
+    
+    .masthead {
+     margin-top: -350px;
+     height: 300px;
+     border-bottom-style: solid; 
+     border-width: 3px; 
+     border-color: #207373;
+    }
+    
+    img {
+    width: 35%;
+    float: left;
+    margin-right: 5%;
+    }
+    
+    figure {
+    width: 50%;
+    margin-bottom: 2%;
+    margin: 0%;
+    float: left;
+    }
+
+}
+
+@media only screen and (min-width: 80rem){
+    .nav {
+    margin-top: -450px;
+    border-top-style: none;
+    text-align: left; 
+    }
+    
+    nav {
+    text-align: left; 
+    padding-left: 5%;
+        
+    }
+    
+    button {
+    width: 14%;
+    font-size: 1rem;
+    margin-right: 1%;
+    }
+    
+    .masthead {
+     margin-top: -350px;
+     height: 300px;
+     border-bottom-style: solid; 
+     border-width: 3px; 
+     border-color: #207373;
+    }
+    
+    img {
+    width: 25%;
+    float: left;
+    margin-right: -10%;
+    }
+    
+    #title {
+        text-align: left;
+        margin-left: 5%;
+        font-size: 25pt;
+    }
+    
+    .article p {
+       width: 60%;
+       float: right;
+       text-align: left;
+       padding-right: 5%;
+       font-size: 1rem;
+    }
+    
+    .article h3 {
+        width: 65%; 
+        float: right;
+        text-align: left;
+        font-size: 1rem;
+    }
+    
+    .article em {
+        float: right;
+        width: 95%;
+        text-align: left;
+        padding-bottom: 10px;
+    }
+    
+    .masthead {
+        text-align: left;
+        padding-left: 5%;
+    }
+    
+    .tagline {
+        width: 30%;
+        text-align: center;
+        font-size: 70pt;
+        margin-top: 70px;
+        line-height: 8.5rem;
+    }
+    
+    figure {
+    width: 33%;
+    margin: 0%;
+    float: left;
+    text-align: center;
+    }
+    
+    figcaption {
+        height: 20px; 
+        width: 100%;
+        float: right;
+    }
+}
